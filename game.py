@@ -2,6 +2,13 @@
 # game.py
 
 import random
+import os
+
+
+VAR_NAME = os.getenv("PLAYER_NAME")
+print(VAR_NAME)
+
+exit()
 
 print("Rock, Paper, Scissors, Shoot!")
 

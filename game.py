@@ -3,12 +3,14 @@
 
 import random
 import os
+import dotenv
 
+dotenv.load_dotenv()
 
 VAR_NAME = os.getenv("PLAYER_NAME")
 print(VAR_NAME)
 
-exit()
+#exit()
 
 print("Rock, Paper, Scissors, Shoot!")
 
@@ -46,7 +48,10 @@ else:
 
 
 valid_options = ["rock", "paper", "scissors"]
+
 computer_choice = random.choice(valid_options)
+
+
 print("COMPUTER CHOICE:", computer_choice)
 
 
